@@ -9,7 +9,6 @@ word_secret_list = list('-'*len(word))
 print('Guess the characters')
 for characters in word_secret:
     print(characters)
-
 guessed_letters = []
 wrong_letters =  []
 
@@ -17,6 +16,7 @@ while True:
     user_character = input("guess a character: ")   
     user_character_alpha = user_character.isalpha()
     if user_character_alpha: 
+        user_character = user_character.lower()
         if user_character in word:
             if user_character not in guessed_letters:
                 guessed_letters.append(user_character)
