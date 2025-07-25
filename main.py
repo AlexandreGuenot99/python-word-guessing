@@ -41,4 +41,4 @@ while True:
     print(f"Wrong letters tried : {wrong_letters}\n")
 
 print("You win")
-print(f"The word is:  {word}")
+print(f"The word is: {word}")
